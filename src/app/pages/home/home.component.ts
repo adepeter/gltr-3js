@@ -1,9 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
 import * as THREE from 'three';
-import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
-import {FlyControls} from "three/examples/jsm/controls/FlyControls";
-import {TrackballControls} from "three/examples/jsm/controls/TrackballControls";
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 @Component({
   selector: 's3d-home',
