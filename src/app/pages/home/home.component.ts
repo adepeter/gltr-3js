@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
 
   constructor() {
     this.currentModel = this.changeModel();
+    const regexFileName = new RegExp('\w+(.gltf|.glb)', 'gi');
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
       45,
@@ -30,6 +31,7 @@ export class HomeComponent implements OnInit {
     gltfLoader.load(
       `assets/${this.currentModel}/scene.gltf`,
       function (gltf) {
+        console.log(gltf.asset);
         scene.add(gltf.scene);
         gltf.scenes;
       },
@@ -56,7 +58,7 @@ export class HomeComponent implements OnInit {
   }
 
   changeModel(): string {
-    const MODEL_NAMES = ['armadillo', 'mountain', 'warrior', 'radio'];
+    const MODEL_NAMES = ['armadillo', 'car', 'mountain', 'warrior', 'radio'];
     const randomInt = Math.floor(Math.random() * MODEL_NAMES.length);
     return MODEL_NAMES[randomInt];
   }
