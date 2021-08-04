@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
   private currentModel: string;
 
   constructor() {
+    // const fs = require('fs');
+    // const files = fs.readdirSync('/assets/photos/');
     this.currentModel = this.changeModel();
     const regexFileName = new RegExp('\w+(.gltf|.glb)', 'gi');
     const scene = new THREE.Scene();
@@ -31,9 +33,7 @@ export class HomeComponent implements OnInit {
     gltfLoader.load(
       `assets/${this.currentModel}/scene.gltf`,
       function (gltf) {
-        console.log(gltf.asset);
         scene.add(gltf.scene);
-        gltf.scenes;
       },
       // called while loading is progressing
       function (xhr) {
