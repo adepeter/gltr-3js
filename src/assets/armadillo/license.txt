@@ -1,0 +1,11 @@
+Model Information:
+* title:	AR-22 Armadillo - Heavy Battle Mech
+* source:	https://sketchfab.com/3d-models/ar-22-armadillo-heavy-battle-mech-6355e3510a544ce4bb219b0b5832933c
+* author:	N1K (https://sketchfab.com/n1k77)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "AR-22 Armadillo - Heavy Battle Mech" (https://sketchfab.com/3d-models/ar-22-armadillo-heavy-battle-mech-6355e3510a544ce4bb219b0b5832933c) by N1K (https://sketchfab.com/n1k77) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

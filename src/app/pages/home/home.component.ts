@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   private currentModel: string;
 
   constructor() {
-    this.currentModel = 'warrior';
+    this.currentModel = this.changeModel();
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
       45,
@@ -55,10 +55,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  changeModel(): void {
-    const MODEL_NAMES = ['armadillo', 'mountain', 'warrior'];
-    const generateRandomInt = () => {
-      return Math.floor(Math.random() * MODEL_NAMES.length);
-    }
+  changeModel(): string {
+    const MODEL_NAMES = ['armadillo', 'mountain', 'warrior', 'radio'];
+    const randomInt = Math.floor(Math.random() * MODEL_NAMES.length);
+    return MODEL_NAMES[randomInt];
   }
 }
