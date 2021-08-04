@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "ng serve",
     "build": "ng build",
     "heroku-postbuild": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -19,10 +19,12 @@
     "@angular/platform-browser": "~12.1.0-",
     "@angular/platform-browser-dynamic": "~12.1.0-",
     "@angular/router": "~12.1.0-",
+    "@types/three-dat.gui": "^2.0.1",
     "express": "^4.17.1",
     "path": "^0.12.7",
     "rxjs": "~6.6.0",
     "three": "^0.131.1",
+    "three-dat.gui": "^2.0.7",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },
