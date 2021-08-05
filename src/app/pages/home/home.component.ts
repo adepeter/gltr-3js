@@ -33,7 +33,6 @@ export class HomeComponent implements OnInit {
     gltfLoader.load(
       `./assets/${this.currentModel}/scene.gltf`,
       function (gltf) {
-        // gltf.scene.scale.set(0.01,0.01,0.01);
         scene.add(gltf.scene);
       },
       // called while loading is progressing
