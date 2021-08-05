@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
     const controls = new OrbitControls(camera, renderer.domElement);
     const gltfLoader = new GLTFLoader();
     gltfLoader.load(
-      `dist/seek3d/assets/${this.currentModel}/scene.gltf`,
+      `./assets/${this.currentModel}/scene.gltf`,
       function (gltf) {
         // gltf.scene.scale.set(0.01,0.01,0.01);
         scene.add(gltf.scene);
