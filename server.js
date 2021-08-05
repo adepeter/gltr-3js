@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/dist/seek3d'));
 
 app.get('/*', function(req,res) {
 
-res.sendFile(path.join(__dirname+'/dist/seek3d/index.html'));
+res.sendFile(path.join(__dirname + '/dist/seek3d/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
